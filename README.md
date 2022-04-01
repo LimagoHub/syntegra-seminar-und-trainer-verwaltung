@@ -1,0 +1,1 @@
+# syntegra-seminar-und-trainer-verwaltung
