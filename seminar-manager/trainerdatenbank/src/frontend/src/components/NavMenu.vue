@@ -1,27 +1,42 @@
 <template>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Syntegrata</a>
 
-                <!-- button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Toggle navigation" @click="toggle">
-                        <span class="navbar-toggler-icon"></span>
-                    </button -->
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" v-bind:class="{show: isExpanded}">
-                    <ul class="navbar-nav flex-grow">
-                        <li class="nav-item">
-                            <router-link :to="{ name: 'HelloWorld' }" class="nav-link text-dark">HelloWorld</router-link>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                        </li>
-                        <li class="nav-item">
-                            <router-link :to="{ name: 'MyTest' }" class="nav-link text-dark">MyTest</router-link>
-                        </li>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <router-link :to="{ name: 'HelloWorld' }" class="nav-link">Home</router-link>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </li>
+            <li class="nav-item">
+              <router-link :to="{ name: 'MyTest' }" class="nav-link">Trainer</router-link>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     </header>
 </template>
+
+
+
 
 <style>
 a.navbar-brand {
